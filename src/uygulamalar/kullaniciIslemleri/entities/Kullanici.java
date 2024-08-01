@@ -26,7 +26,6 @@ public class Kullanici extends BaseEntity {
         this.id = kullaniciCount;
         this.kayitTarihi = LocalDate.now();
         this.sepet = new Sepet();
-        this.sepet.setKullaniciId(this.id);
         this.sepetList = new ArrayList<>();
     }
     
@@ -100,22 +99,6 @@ public class Kullanici extends BaseEntity {
     
     public LocalDate getDogumTarihi() {
         return dogumTarihi;
-    }
-    
-    public Sepet getSepet() {
-        return sepet;
-    }
-    
-    public void setSepet(Sepet sepet) {
-        this.sepet = sepet;
-    }
-    
-    public ArrayList<Sepet> getSepetList() {
-        return sepetList;
-    }
-    
-    public void addSepetToSepetList(Sepet sepet) {
-        this.sepetList.add(sepet);
     }
     
     @Override
