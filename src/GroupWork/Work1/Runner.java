@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Runner extends Sabit {
 	static Scanner scanner = new Scanner(System.in);
-	static Sepet sepet = new Sepet();
+	//static Sepet sepet = new Sepet();
 	static Kullanici aktifKullanici = null;
 	
 	public static void main(String[] args) {
