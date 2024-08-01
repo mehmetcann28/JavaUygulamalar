@@ -1,6 +1,5 @@
 package uygulamalar.entities;
 
-import uygulamalar.Urun;
 import uygulamalar.utilities.enums.EKategori;
 import uygulamalar.utilities.enums.EYiyecekTipi;
 
@@ -27,6 +26,6 @@ public class Yiyecek extends Urun {
 	
 	@Override
 	public String urunDetayBilgisi() {
-		return super.urunDetayBilgisi() + " yiyecek tipi : " + getYiyecekTipi();
+		return super.urunDetayBilgisi()+" yiyecek tipi : "+getYiyecekTipi();
 	}
 }

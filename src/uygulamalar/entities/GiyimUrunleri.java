@@ -1,6 +1,5 @@
 package uygulamalar.entities;
 
-import uygulamalar.Urun;
 import uygulamalar.utilities.enums.EBeden;
 import uygulamalar.utilities.enums.EKategori;
 import uygulamalar.utilities.enums.ERenk;

@@ -1,4 +1,4 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.entities;
+package uygulamalar.kullaniciIslemleri.entities;
 
 public class BaseEntity {
     protected int id;

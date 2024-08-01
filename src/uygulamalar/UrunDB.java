@@ -1,5 +1,7 @@
 package uygulamalar;
 
+import uygulamalar.entities.Urun;
+
 public class UrunDB {
 	static Urun findById(int id) {
 		for (Urun urun : Urun.urunArrayList) {

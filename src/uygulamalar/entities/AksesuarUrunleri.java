@@ -1,6 +1,5 @@
 package uygulamalar.entities;
 
-import uygulamalar.Urun;
 import uygulamalar.utilities.enums.EDesen;
 import uygulamalar.utilities.enums.EKategori;
 import uygulamalar.utilities.enums.EMateryal;
@@ -44,7 +43,7 @@ public class AksesuarUrunleri extends Urun {
 	
 	@Override
 	public String toString() {
-		return super.urunOzetBilgisi() + " tur: " + tur + " materyal: " + materyal + " desen: " + desen;
+		return super.urunOzetBilgisi();
 	}
 	
 	@Override

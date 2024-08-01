@@ -1,4 +1,4 @@
-package uygulamalar;
+package uygulamalar.entities;
 
 import uygulamalar.utilities.enums.EKategori;
 
@@ -14,7 +14,7 @@ public class Urun {
 	private EKategori kategori;
 	private Integer adet;
 	
-	static ArrayList<Urun> urunArrayList=new ArrayList<>();
+	public static ArrayList<Urun> urunArrayList=new ArrayList<>();
 	
 	public Urun(String ad, Double fiyat, String aciklama, EKategori kategori,Integer adet) {
 		this.urunId=++idCount;
@@ -70,11 +70,12 @@ public class Urun {
 	public void setAdet(Integer adet) {
 		this.adet = adet;
 	}
+	
 	public String urunOzetBilgisi(){
-		return " id : "+getUrunId()+ '\''+
-				", ad : " + getAd()
-				+ ", fiyat : '" + getFiyat() + '\''
-				+ ", adet : '" + getAdet() + '\'';
+		return " id : "+getUrunId()+ '\''
+				+ ", ad : " + getAd()
+				+", adet : "+getAdet()
+				+ ", fiyat : '" + getFiyat() + '\'';
 	}
 	
 	public String urunDetayBilgisi(){

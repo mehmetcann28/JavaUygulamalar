@@ -1,11 +1,9 @@
 package uygulamalar.entities;
 
-import uygulamalar.Urun;
 import uygulamalar.utilities.enums.EBakimUrunleriTipler;
 import uygulamalar.utilities.enums.EKategori;
 
 public class BakimUrunleri extends Urun {
-	
 	private EBakimUrunleriTipler tipler;
 	
 	public BakimUrunleri(String ad, Double fiyat, String aciklama, EKategori kategori, Integer adet, EBakimUrunleriTipler tipler ) {

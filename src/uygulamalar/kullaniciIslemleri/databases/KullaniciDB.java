@@ -1,7 +1,7 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.databases;
+package uygulamalar.kullaniciIslemleri.databases;
 
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Kullanici;
-import uygulamalar.kullanici_kayit_sistemi.refactored.utility.DatabaseManager;
+import uygulamalar.kullaniciIslemleri.entities.Kullanici;
+import uygulamalar.kullaniciIslemleri.utility.DatabaseManager;
 
 public class KullaniciDB extends DatabaseManager<Kullanici> {
 

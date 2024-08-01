@@ -1,8 +1,8 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.databases;
+package uygulamalar.kullaniciIslemleri.databases;
 
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Kullanici;
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Mail;
-import uygulamalar.kullanici_kayit_sistemi.refactored.utility.DatabaseManager;
+import uygulamalar.kullaniciIslemleri.entities.Kullanici;
+import uygulamalar.kullaniciIslemleri.entities.Mail;
+import uygulamalar.kullaniciIslemleri.utility.DatabaseManager;
 
 import java.util.ArrayList;
 import java.util.List;

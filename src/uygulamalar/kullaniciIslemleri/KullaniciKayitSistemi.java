@@ -1,9 +1,9 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored;
+package uygulamalar.kullaniciIslemleri;
 
-import uygulamalar.kullanici_kayit_sistemi.refactored.databases.KullaniciDB;
-import uygulamalar.kullanici_kayit_sistemi.refactored.databases.MailDB;
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Kullanici;
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Mail;
+import uygulamalar.kullaniciIslemleri.databases.KullaniciDB;
+import uygulamalar.kullaniciIslemleri.databases.MailDB;
+import uygulamalar.kullaniciIslemleri.entities.Kullanici;
+import uygulamalar.kullaniciIslemleri.entities.Mail;
 
 import java.time.LocalDate;
 import java.time.Period;

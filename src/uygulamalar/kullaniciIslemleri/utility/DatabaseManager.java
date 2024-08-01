@@ -1,6 +1,6 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.utility;
+package uygulamalar.kullaniciIslemleri.utility;
 
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.BaseEntity;
+import uygulamalar.kullaniciIslemleri.entities.BaseEntity;
 
 import java.util.ArrayList;
 import java.util.List;

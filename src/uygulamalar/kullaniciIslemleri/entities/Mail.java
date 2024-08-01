@@ -1,4 +1,4 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.entities;
+package uygulamalar.kullaniciIslemleri.entities;
 
 import java.time.LocalDate;
 

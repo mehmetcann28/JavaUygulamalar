@@ -1,4 +1,4 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored.utility;
+package uygulamalar.kullaniciIslemleri.utility;
 
 
 import java.util.List;

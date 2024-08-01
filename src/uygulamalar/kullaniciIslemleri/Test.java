@@ -1,7 +1,7 @@
-package uygulamalar.kullanici_kayit_sistemi.refactored;
+package uygulamalar.kullaniciIslemleri;
 
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Kullanici;
-import uygulamalar.kullanici_kayit_sistemi.refactored.entities.Mail;
+import uygulamalar.kullaniciIslemleri.entities.Kullanici;
+import uygulamalar.kullaniciIslemleri.entities.Mail;
 
 public class Test {
     public static void main(String[] args) {
