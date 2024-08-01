@@ -1,4 +1,4 @@
-package uygulamalar;
+package uygulamalar.utilities.enums;
 
 public enum EBeden {
 	XS,

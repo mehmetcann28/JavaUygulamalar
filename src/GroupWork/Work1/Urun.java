@@ -1,6 +1,6 @@
-package uygulamalar;
+package GroupWork.Work1;
 
-import uygulamalar.utilities.enums.EKategori;
+import GroupWork.Work1.utilities.enums.EKategori;
 
 import java.util.ArrayList;
 
@@ -16,14 +16,14 @@ public class Urun {
 	
 	static ArrayList<Urun> urunArrayList=new ArrayList<>();
 	
-	public Urun(String ad, Double fiyat, String aciklama, EKategori kategori,Integer adet) {
+	public Urun(String ad, Double fiyat, String aciklama, EKategori kategori, Integer adet) {
 		this.urunId=++idCount;
 		this.ad = ad;
 		this.fiyat = fiyat;
 		this.aciklama = aciklama;
 		this.kategori = kategori;
 		this.adet=adet;
-		urunArrayList.add(this);
+//		urunArrayList.add(this);
 	}
 	
 	
@@ -70,8 +70,10 @@ public class Urun {
 	public void setAdet(Integer adet) {
 		this.adet = adet;
 	}
+	
 	public String urunOzetBilgisi(){
 		return " id : "+getUrunId()+ '\''+
+				"kategori : "+getKategori()+ '\''+
 				", ad : " + getAd()
 				+ ", fiyat : '" + getFiyat() + '\''
 				+ ", adet : '" + getAdet() + '\'';

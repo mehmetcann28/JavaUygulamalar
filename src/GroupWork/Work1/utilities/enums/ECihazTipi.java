@@ -1,0 +1,5 @@
+package GroupWork.Work1.utilities.enums;
+
+public enum ECihazTipi {
+	TELEFON, PC, TABLET, TELEVIZYON, KULAKLIK, MIKRODALGA, FIRIN, BUZDOLABI, CAMASIR_MAKINESI, SUPURGE
+}
