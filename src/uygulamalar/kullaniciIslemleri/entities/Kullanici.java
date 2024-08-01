@@ -18,16 +18,16 @@ public class Kullanici extends BaseEntity {
     private LocalDate dogumTarihi;
     private Sepet sepet;
     private ArrayList<Sepet> sepetList;
-
-
-
-    public Kullanici(){
+    
+    
+    
+    public Kullanici() {
         this.kullaniciCount++;
         this.id = kullaniciCount;
         this.kayitTarihi = LocalDate.now();
-        this.sepet=new Sepet();//☺
+        this.sepet = new Sepet();
         this.sepet.setKullaniciId(this.id);
-        this.sepetList=new ArrayList<>();//☺
+        this.sepetList = new ArrayList<>();
     }
     
     public void setIsim(String isim) {

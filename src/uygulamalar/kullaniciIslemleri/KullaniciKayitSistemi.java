@@ -1,5 +1,42 @@
 package uygulamalar.kullaniciIslemleri;
 
+/*int selection = -1;
+				do {
+					System.out.println("1- Kullanıcı İşlemleri");
+					System.out.println("2- Sepet Menüsünü görüntüle");
+					System.out.println("0- Çıkış");
+					System.out.println("Lütfen seçim yapınız");
+					try {
+						selection = scanner.nextInt();
+					}
+					catch (Exception e) {
+						System.out.println("Gecerli bir secim yapiniz.");
+					}
+					finally {
+						scanner.nextLine();
+					}
+					switch (selection) {
+						case 1: {
+							if (kullanici != null) {
+								kullaniciArayuzu(kullanici);
+								break;
+							}
+						}
+						case 2: {
+							sepet.sepettekiUrunleriListele();
+							break;
+						}
+						case 0: {
+							//System.exit(1);
+							break;
+						}
+						default: {
+							System.out.println("Yanlış tuşlama yaptınız tekrar deneyiniz:");
+							break;
+						}
+					}
+				} while (selection!=0);*/
+
 import uygulamalar.Runner;
 import uygulamalar.Sepet;
 import uygulamalar.kullaniciIslemleri.databases.KullaniciDB;
@@ -66,43 +103,6 @@ public class KullaniciKayitSistemi {
 					Runner.menu();
 				}
 				break;
-				/*int selection = -1;
-				do {
-					System.out.println("1- Kullanıcı İşlemleri");
-					System.out.println("2- Sepet Menüsünü görüntüle");
-					System.out.println("0- Çıkış");
-					System.out.println("Lütfen seçim yapınız");
-					try {
-						selection = scanner.nextInt();
-					}
-					catch (Exception e) {
-						System.out.println("Gecerli bir secim yapiniz.");
-					}
-					finally {
-						scanner.nextLine();
-					}
-					switch (selection) {
-						case 1: {
-							if (kullanici != null) {
-								kullaniciArayuzu(kullanici);
-								break;
-							}
-						}
-						case 2: {
-							sepet.sepettekiUrunleriListele();
-							break;
-						}
-						case 0: {
-							//System.exit(1);
-							break;
-						}
-						default: {
-							System.out.println("Yanlış tuşlama yaptınız tekrar deneyiniz:");
-							break;
-						}
-					}
-				} while (selection!=0);*/
-				
 			}
 			case 3: {
 				sifremiUnuttum();
@@ -144,7 +144,7 @@ public class KullaniciKayitSistemi {
 					break;
 				}
 				case 2: {
-					Runner.sepet.sepettekiUrunleriListele();
+					Runner.aktifKullanici.getSepet().sepettekiUrunleriListele();
 					break;
 				}
 				case 0: {
