@@ -1,4 +1,4 @@
-package uygulamalar.kullaniciIslemleri;
+package works.application1.kullaniciIslemleri;
 
 /*int selection = -1;
 				do {
@@ -60,8 +60,7 @@ public class KullaniciKayitSistemi {
     */
 /*public static void main(String[] args) {
         menu();
-    }*/
-/*
+    }*//*
 
 	
 	public static void menu() {
@@ -602,12 +601,11 @@ public class KullaniciKayitSistemi {
 	}
 }*/
 
-import uygulamalar.Runner;
-import uygulamalar.Sepet;
-import uygulamalar.kullaniciIslemleri.databases.KullaniciDB;
-import uygulamalar.kullaniciIslemleri.databases.MailDB;
-import uygulamalar.kullaniciIslemleri.entities.Kullanici;
-import uygulamalar.kullaniciIslemleri.entities.Mail;
+import works.application1.Runner;
+import works.application1.kullaniciIslemleri.databases.KullaniciDB;
+import works.application1.kullaniciIslemleri.databases.MailDB;
+import works.application1.kullaniciIslemleri.entities.Kullanici;
+import works.application1.kullaniciIslemleri.entities.Mail;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -658,10 +656,8 @@ public class KullaniciKayitSistemi {
 			}
 			case 2: {
 				Kullanici kullanici = girisYap();
-				kullanici=new Kullanici();
 				if (kullanici!=null){
 					Runner.aktifKullanici=kullanici;
-					
 					kullaniciSecimMenusu(kullanici);
 				}
 				else {
@@ -710,7 +706,7 @@ public class KullaniciKayitSistemi {
 					break;
 				}
 				case 2: {
-					Runner.sepet.sepettekiUrunleriListele();
+					Runner.geciciSepet.sepettekiUrunleriListele();
 					break;
 				}
 				case 0: {
@@ -831,8 +827,9 @@ public class KullaniciKayitSistemi {
 		}
 		return secim;
 	}
+	
 	private static List<Mail> gidenMailler(Kullanici kullanici) {
-		List<Mail> mailList = mailDB.findSendByKullanici(kullanici);
+		List<Mail> mailList = mailDB.findSentByKullanici(kullanici);
 		if (mailList.isEmpty()) {
 			System.out.println("Goruntulenecek hicbir mail bulunmamaktadir.");
 			return null;
@@ -992,7 +989,9 @@ public class KullaniciKayitSistemi {
 		LocalDate dogumTarihi;
 		Kullanici kullanici;
 		dogumTarihi = dogumTarihiAl();
+//       dogumTarihi = LocalDate.of(1996,8,7);
 		if (dogumTarihKontrol(dogumTarihi)) {
+			//Dogum tarihini kontrolunu gectik, o zaman kullanici olusturabiliriz.
 			kullanici = new Kullanici();
 			kullanici.setDogumTarihi(dogumTarihi);
 			
