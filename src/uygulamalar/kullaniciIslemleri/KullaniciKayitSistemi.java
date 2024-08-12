@@ -818,11 +818,11 @@ public class KullaniciKayitSistemi {
 				gelenMailler(kullanici);
 				break;
 			}
-			case 3: {
+			/*case 3: {
 				//gidenMailler
 				gidenMailler(kullanici);
 				break;
-			}
+			}*/
 			
 			case 0: {
 				System.out.println("Kullanici Menusune Donuluyor...");
@@ -831,7 +831,7 @@ public class KullaniciKayitSistemi {
 		}
 		return secim;
 	}
-	private static List<Mail> gidenMailler(Kullanici kullanici) {
+	/*private static List<Mail> gidenMailler(Kullanici kullanici) {
 		List<Mail> mailList = mailDB.findSendByKullanici(kullanici);
 		if (mailList.isEmpty()) {
 			System.out.println("Goruntulenecek hicbir mail bulunmamaktadir.");
@@ -842,7 +842,7 @@ public class KullaniciKayitSistemi {
 			mailList.forEach(System.out::println);
 			return mailList;
 		}
-	}
+	}*/
 	
 	private static List<Mail> gelenMailler(Kullanici kullanici) {
 		List<Mail> mailList = mailDB.findReceivedByKullanici(kullanici);
